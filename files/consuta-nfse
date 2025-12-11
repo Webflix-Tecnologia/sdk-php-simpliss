@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:ConsultarNfse>
+         <sis:ConsultarNfseEnvio>
+            <nfse:NumeroNfse>1234</nfse:NumeroNfse>
+         </sis:ConsultarNfseEnvio>
+         <sis:pParam>
+            <sis1:P1>55347520000167</sis1:P1>
+            <sis1:P2>gA1WGkNpFhT9bZH6</sis1:P2>
+         </sis:pParam>
+      </sis:ConsultarNfse>
+   </soapenv:Body>
+</soapenv:Envelope>

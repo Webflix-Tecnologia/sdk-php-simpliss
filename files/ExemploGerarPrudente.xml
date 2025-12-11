@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <GerarNfse xmlns="http://www.sistema.com.br/Sistema.Ws.Nfse">
+         <GerarNovaNfseEnvio>
+            <ns1:Prestador xmlns:ns1="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd">
+               <ns1:Cnpj>CNPJ</ns1:Cnpj>
+               <ns1:InscricaoMunicipal>IM</ns1:InscricaoMunicipal>
+            </ns1:Prestador>
+            <ns2:InformacaoNfse id="02" xmlns:ns2="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd">
+               <ns2:NaturezaOperacao>1</ns2:NaturezaOperacao>
+               <ns2:RegimeEspecialTributacao>6</ns2:RegimeEspecialTributacao>
+               <ns2:OptanteSimplesNacional>1</ns2:OptanteSimplesNacional>
+               <ns2:IncentivadorCultural>2</ns2:IncentivadorCultural>
+               <ns2:Status>1</ns2:Status>
+               <ns2:Competencia>2024-02-02T08:31:00.000Z</ns2:Competencia>
+               <ns2:Servico>
+                  <ns2:Valores>
+                     <ns2:ValorServicos>400.00</ns2:ValorServicos>
+                     <ns2:ValorDeducoes>0.00</ns2:ValorDeducoes>
+                     <ns2:ValorPis>0.00</ns2:ValorPis>
+                     <ns2:ValorCofins>0.00</ns2:ValorCofins>
+                     <ns2:ValorInss>0.00</ns2:ValorInss>
+                     <ns2:ValorIr>0.00</ns2:ValorIr>
+                     <ns2:ValorCsll>0.00</ns2:ValorCsll>
+                     <ns2:IssRetido>2</ns2:IssRetido>
+                     <ns2:ValorIss>8.00</ns2:ValorIss>
+                     <ns2:ValorIssRetido>0.00</ns2:ValorIssRetido>
+                     <ns2:OutrasRetencoes>0.00</ns2:OutrasRetencoes>
+                     <ns2:BaseCalculo>400.00</ns2:BaseCalculo>
+                     <ns2:Aliquota>2.0000</ns2:Aliquota>
+                     <ns2:ValorLiquidoNfse>400.00</ns2:ValorLiquidoNfse>
+                     <ns2:DescontoIncondicionado>0.00</ns2:DescontoIncondicionado>
+                     <ns2:DescontoCondicionado>0.00</ns2:DescontoCondicionado>
+                  </ns2:Valores>
+                  <ns2:ItemListaServico>4.02</ns2:ItemListaServico>
+                  <ns2:CodigoCnae>5510801</ns2:CodigoCnae>
+                  <ns2:CodigoTributacaoMunicipio>4.02</ns2:CodigoTributacaoMunicipio>
+                  <ns2:Discriminacao>DISCRIMINACAO</ns2:Discriminacao>
+                  <ns2:CodigoMunicipio>3541406</ns2:CodigoMunicipio>
+                  <ns2:ItensServico>
+                     <ns2:Descricao>DISCRIMINACAO</ns2:Descricao>
+                     <ns2:Quantidade>1.00</ns2:Quantidade>
+                     <ns2:ValorUnitario>400.0000</ns2:ValorUnitario>
+                  </ns2:ItensServico>
+               </ns2:Servico>
+               <ns2:Tomador>
+                  <ns2:IdentificacaoTomador>
+                     <ns2:CpfCnpj>
+                        <ns2:Cnpj>CNPJ/CPF</ns2:Cnpj>
+                     </ns2:CpfCnpj>
+                  </ns2:IdentificacaoTomador>
+                  <ns2:RazaoSocial>RAZAO SOCIAL</ns2:RazaoSocial>
+                  <ns2:Endereco>
+                     <ns2:Endereco>RUA</ns2:Endereco>
+                     <ns2:Numero>1000</ns2:Numero>
+                     <ns2:Bairro>BAIRRO</ns2:Bairro>
+                     <ns2:CodigoMunicipio>3529203</ns2:CodigoMunicipio>
+                     <ns2:Uf>SP</ns2:Uf>
+                     <ns2:Cep>10000000</ns2:Cep>
+                  </ns2:Endereco>
+                  <ns2:Contato>
+                     <ns2:Telefone>1936023600</ns2:Telefone>
+                     <ns2:Email>suporte@simpliss.com.br</ns2:Email>
+                  </ns2:Contato>
+               </ns2:Tomador>
+            </ns2:InformacaoNfse>
+         </GerarNovaNfseEnvio>
+         <pParam>
+            <ns3:P1 xmlns:ns3="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">CNPJ</ns3:P1>
+            <ns4:P2 xmlns:ns4="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">SENHA</ns4:P2>
+         </pParam>
+      </GerarNfse>
+   </soapenv:Body>
+</soapenv:Envelope>

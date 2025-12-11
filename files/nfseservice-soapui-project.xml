@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9029e35b-c4c7-41e0-a6c3-9f6ea029a88b" activeEnvironment="Default" name="nfseservice" resourceRoot="" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="68e499d0-5abe-43cb-a14a-3da181a8c5d4" wsaVersion="NONE" name="BasicHttpBinding_INfseService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_INfseService" soapVersion="1_1" anonymous="optional" definition="http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl"><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="NfseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.sistema.com.br/Sistema.Ws.Nfse" location="http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_INfseService" type="i0:INfseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Versao">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/Versao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecepcionarLoteRps">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/RecepcionarLoteRps" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSituacaoLoteRps">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarNfsePorRps">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfsePorRps" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarNfse">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLoteRps">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarLoteRps" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarNfse">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/CancelarNfse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GerarNfse">
+      <soap:operation soapAction="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NfseService">
+    <wsdl:port name="BasicHttpBinding_INfseService" binding="tns:BasicHttpBinding_INfseService">
+      <soap:address location="http://wshomologacao.simplissweb.com.br/nfseservice.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.sistema.com.br/Sistema.Ws.Nfse/Imports">
+      <xsd:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd0" namespace="http://www.sistema.com.br/Sistema.Ws.Nfse"/>
+      <xsd:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd1" namespace="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      <xsd:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd2" namespace="http://www.w3.org/2000/09/xmldsig#"/>
+      <xsd:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd3" namespace="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INfseService_Versao_InputMessage">
+    <wsdl:part name="parameters" element="tns:Versao"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_Versao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_RecepcionarLoteRps_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecepcionarLoteRps"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_RecepcionarLoteRps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecepcionarLoteRpsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarSituacaoLoteRps_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSituacaoLoteRps"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarSituacaoLoteRps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSituacaoLoteRpsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarNfsePorRps_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarNfsePorRps"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarNfsePorRps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarNfsePorRpsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarNfse_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarNfse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarNfse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarNfseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarLoteRps_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLoteRps"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_ConsultarLoteRps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarLoteRpsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_CancelarNfse_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_CancelarNfse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_GerarNfse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GerarNfse"/>
+  </wsdl:message>
+  <wsdl:message name="INfseService_GerarNfse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GerarNfseResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="INfseService">
+    <wsdl:operation name="Versao">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/Versao" message="tns:INfseService_Versao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/VersaoResponse" message="tns:INfseService_Versao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="RecepcionarLoteRps">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/RecepcionarLoteRps" message="tns:INfseService_RecepcionarLoteRps_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/RecepcionarLoteRpsResponse" message="tns:INfseService_RecepcionarLoteRps_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSituacaoLoteRps">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps" message="tns:INfseService_ConsultarSituacaoLoteRps_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRpsResponse" message="tns:INfseService_ConsultarSituacaoLoteRps_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarNfsePorRps">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfsePorRps" message="tns:INfseService_ConsultarNfsePorRps_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfsePorRpsResponse" message="tns:INfseService_ConsultarNfsePorRps_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarNfse">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfse" message="tns:INfseService_ConsultarNfse_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfseResponse" message="tns:INfseService_ConsultarNfse_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLoteRps">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarLoteRps" message="tns:INfseService_ConsultarLoteRps_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarLoteRpsResponse" message="tns:INfseService_ConsultarLoteRps_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarNfse">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/CancelarNfse" message="tns:INfseService_CancelarNfse_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/CancelarNfseResponse" message="tns:INfseService_CancelarNfse_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GerarNfse">
+      <wsdl:input wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse" message="tns:INfseService_GerarNfse_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfseResponse" message="tns:INfseService_GerarNfse_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sistema.com.br/Sistema.Ws.Nfse">
+  <xs:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd1" namespace="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+  <xs:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd3" namespace="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+  <xs:element name="Versao">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="VersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="VersaoResult" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecepcionarLoteRps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="EnviarLoteRpsEnvio" type="q1:EnviarLoteRpsEnvio" xmlns:q1="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q2:ddDuasStrings" xmlns:q2="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecepcionarLoteRpsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="RecepcionarLoteRpsResult" type="q3:EnviarLoteRpsResposta" xmlns:q3="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarSituacaoLoteRps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarSituacaoLoteRpsEnvio" type="q4:ConsultarSituacaoLoteRpsEnvio" xmlns:q4="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q5:ddDuasStrings" xmlns:q5="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarSituacaoLoteRpsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarSituacaoLoteRpsResult" type="q6:ConsultarSituacaoLoteRpsResposta" xmlns:q6="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarNfsePorRps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarNfseRpsEnvio" type="q7:ConsultarNfseRpsEnvio" xmlns:q7="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q8:ddDuasStrings" xmlns:q8="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarNfsePorRpsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarNfsePorRpsResult" type="q9:ConsultarNfseRpsResposta" xmlns:q9="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarNfse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarNfseEnvio" type="q10:ConsultarNfseEnvio" xmlns:q10="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q11:ddDuasStrings" xmlns:q11="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarNfseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarNfseResult" type="q12:ConsultarNfseResposta" xmlns:q12="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLoteRps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarLoteRpsEnvio" type="q13:ConsultarLoteRpsEnvio" xmlns:q13="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q14:ddDuasStrings" xmlns:q14="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarLoteRpsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarLoteRpsResult" type="q15:ConsultarLoteRpsResposta" xmlns:q15="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarNfse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CancelarNfseEnvio" type="q16:CancelarNfseEnvio" xmlns:q16="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q17:ddDuasStrings" xmlns:q17="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelarNfseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="CancelarNfseResult" type="q18:CancelarNfseResposta" xmlns:q18="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarNfse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GerarNovaNfseEnvio" type="q19:GerarNovaNfseEnvio" xmlns:q19="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="pParam" type="q20:ddDuasStrings" xmlns:q20="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GerarNfseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GerarNfseResult" type="q21:GerarNovaNfseResposta" xmlns:q21="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd">
+  <xs:import schemaLocation="http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd2" namespace="http://www.w3.org/2000/09/xmldsig#"/>
+  <xs:complexType name="EnviarLoteRpsEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="LoteRps" type="tns:tcLoteRps"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q1:Signature" xmlns:q1="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcLoteRps">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NumeroLote" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Cnpj" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoMunicipal" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="QuantidadeRps" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ListaRps" type="tns:ArrayOfTcRps"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTcRps">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rps" type="tns:tcRps"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcRps">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="InfRps" type="tns:tcInfRps"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q2:Signature" xmlns:q2="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcInfRps">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoRps" type="tns:tcIdentificacaoRps"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="DataEmissao" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="NaturezaOperacao" type="xs:byte"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RegimeEspecialTributacao" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="OptanteSimplesNacional" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="IncentivadorCultural" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" type="xs:byte"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RpsSubstituido" type="tns:tcIdentificacaoRps"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OutrasInformacoes" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Servico" type="tns:tcDadosServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tomador" type="tns:tcDadosTomador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IntermediarioServico" type="tns:tcIdentificacaoIntermediarioServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ContrucaoCivil" type="tns:tcDadosConstrucaoCivil"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoRps">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numero" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Serie" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Tipo" type="xs:byte"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcDadosServico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Valores" type="tns:tcValores"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ItemListaServico" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoCnae" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoTributacaoMunicipio" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Discriminacao" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="CodigoMunicipio" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItensServico" type="tns:tcItemServico"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcValores">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="ValorServicos" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorDeducoes" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorPis" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorCofins" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorInss" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorIr" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorCsll" type="xs:decimal"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="IssRetido" type="xs:byte"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorIss" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorIssRetido" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OutrasRetencoes" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="BaseCalculo" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Aliquota" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorLiquidoNfse" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DescontoIncondicionado" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DescontoCondicionado" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcItemServico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Descricao" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Quantidade" type="xs:decimal"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="ValorUnitario" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IssTributavel" type="xs:byte"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoPrestador">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Cnpj" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoMunicipal" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcDadosTomador">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoTomador" type="tns:tcIdentificacaoTomador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RazaoSocial" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Endereco" type="tns:tcEndereco"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Contato" type="tns:tcContato"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoTomador">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CpfCnpj" type="tns:tcCpfCnpj"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoMunicipal" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoEstadual" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcCpfCnpj">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="Cnpj" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="Cpf" type="xs:string"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcEndereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Endereco" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numero" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Complemento" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Bairro" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoMunicipio" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Uf" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Cep" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcContato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Telefone" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoIntermediarioServico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RazaoSocial" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CpfCnpj" type="tns:tcCpfCnpj"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoMunicipal" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcDadosConstrucaoCivil">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoObra" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Art" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EnviarLoteRpsResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="1" maxOccurs="1" name="DataRecebimento" type="xs:dateTime"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="NumeroLote" type="xs:nonNegativeInteger"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="Protocolo" type="xs:string"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcMensagemRetorno">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Codigo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Mensagem" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Correcao" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarSituacaoLoteRpsEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Protocolo" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarSituacaoLoteRpsResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="NumeroLote" type="xs:nonNegativeInteger"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Situacao" type="xs:byte"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarNfseRpsEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoRps" type="tns:tcIdentificacaoRps"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarNfseRpsResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="CompNfse" type="tns:tcCompNfse"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcCompNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Nfse" type="tns:tcNfse"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NfseCancelamento" type="tns:tcCancelamentoNfse"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NfseSubstituicao" type="tns:tcSubstituicaoNfse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="InfNfse" type="tns:tcInfNfse"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="q3:Signature" xmlns:q3="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcInfNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numero" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoVerificacao" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="DataEmissao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoRps" type="tns:tcIdentificacaoRps"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DataEmissaoRps" type="xs:date"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="NaturezaOperacao" type="xs:byte"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RegimeEspecialTributacao" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="OptanteSimplesNacional" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="IncentivadorCultural" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Competencia" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NfseSubstituida" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OutrasInformacoes" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Servico" type="tns:tcDadosServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValorCredito" type="xs:decimal"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="PrestadorServico" type="tns:tcDadosPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="TomadorServico" type="tns:tcDadosTomador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IntermediarioServico" type="tns:tcIdentificacaoIntermediarioServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OrgaoGerador" type="tns:tcIdentificacaoOrgaoGerador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ContrucaoCivil" type="tns:tcDadosConstrucaoCivil"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="MotivoCancelamento" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="tcDadosPrestador">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoPrestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RazaoSocial" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NomeFantasia" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Endereco" type="tns:tcEndereco"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Contato" type="tns:tcContato"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoOrgaoGerador">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="CodigoMunicipio" type="xs:int"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Uf" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcCancelamentoNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Confirmacao" type="tns:tcConfirmacaoCancelamento"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q4:Signature" xmlns:q4="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcConfirmacaoCancelamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Pedido" type="tns:tcPedidoCancelamento"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="DataHoraCancelamento" type="xs:dateTime"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="tcPedidoCancelamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="InfPedidoCancelamento" type="tns:tcInfPedidoCancelamento"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q5:Signature" xmlns:q5="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcInfPedidoCancelamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoNfse" type="tns:tcIdentificacaoNfse"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoCancelamento" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="tcIdentificacaoNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numero" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Cnpj" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InscricaoMunicipal" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="CodigoMunicipio" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcSubstituicaoNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SubstituicaoNfse" type="tns:tcInfSubstituicaoNfse"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="q6:Signature" xmlns:q6="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcInfSubstituicaoNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="NfseSubstituidora" type="xs:nonNegativeInteger"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="ConsultarNfseEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NumeroNfse" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="PeriodoEmissao">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="DataInicial" type="xs:date"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="DataFinal" type="xs:date"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tomador" type="tns:tcIdentificacaoTomador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IntermediarioServico" type="tns:tcIdentificacaoIntermediarioServico"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarNfseResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaNfse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CompNfse" type="tns:tcCompNfse"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarLoteRpsEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Protocolo" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarLoteRpsResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaNfse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CompNfse" type="tns:tcCompNfse"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarNfseEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Pedido" type="tns:tcPedidoCancelamento"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarNfseResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="Cancelamento" type="tns:tcCancelamentoNfse"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GerarNovaNfseEnvio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Prestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="InformacaoNfse" type="tns:tcInfNovaNfse"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q7:Signature" xmlns:q7="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcInfNovaNfse">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="NaturezaOperacao" type="xs:byte"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="RegimeEspecialTributacao" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="OptanteSimplesNacional" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="IncentivadorCultural" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" type="xs:byte"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="Competencia" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="NfseSubstituida" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="OutrasInformacoes" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Servico" type="tns:tcDadosServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tomador" type="tns:tcDadosTomador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="IntermediarioServico" type="tns:tcIdentificacaoIntermediarioServico"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="ContrucaoCivil" type="tns:tcDadosConstrucaoCivil"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="MotivoCancelamento" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="GerarNovaNfseResposta">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="ListaMensagemRetorno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemRetorno" type="tns:tcMensagemRetorno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="NovaNfse" type="tns:tcRespostaIdentNovaNfse"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcRespostaIdentNovaNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoNfse" type="tns:tcIdentNovaNfse"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="q8:Signature" xmlns:q8="http://www.w3.org/2000/09/xmldsig#"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tcIdentNovaNfse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IdentificacaoPrestador" type="tns:tcIdentificacaoPrestador"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Numero" type="xs:nonNegativeInteger"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Serie" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="CodigoVerificacao" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="DataEmissao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Link" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.w3.org/2000/09/xmldsig#">
+  <xs:element name="Signature" type="tns:SignatureType"/>
+  <xs:complexType name="SignatureType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SignedInfo" type="tns:SignedInfoType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="SignatureValue" type="tns:SignatureValueType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="KeyInfo" type="tns:KeyInfoType"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Object" type="tns:ObjectType"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:ID"/>
+  </xs:complexType>
+  <xs:complexType name="SignedInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CanonicalizationMethod" type="tns:CanonicalizationMethodType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="SignatureMethod" type="tns:SignatureMethodType"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reference" type="tns:ReferenceType"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:ID"/>
+  </xs:complexType>
+  <xs:complexType name="CanonicalizationMethodType" mixed="true">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Algorithm" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="SignatureMethodType" mixed="true">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="HMACOutputLength" type="xs:integer"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Algorithm" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="ReferenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Transforms" type="tns:ArrayOfTransformType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DigestMethod" type="tns:DigestMethodType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="DigestValue" type="xs:base64Binary"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:ID"/>
+    <xs:attribute name="URI" type="xs:anyURI"/>
+    <xs:attribute name="Type" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTransformType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Transform" type="tns:TransformType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TransformType" mixed="true">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="1" name="XPath" type="xs:string"/>
+        <xs:any minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="Algorithm" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="DigestMethodType" mixed="true">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Algorithm" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="SignatureValueType">
+    <xs:simpleContent>
+      <xs:extension base="xs:base64Binary">
+        <xs:attribute name="Id" type="xs:ID"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="KeyInfoType" mixed="true">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="1" name="KeyName" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="KeyValue" type="tns:KeyValueType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="MgmtData" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="PGPData" type="tns:PGPDataType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="RetrievalMethod" type="tns:RetrievalMethodType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="SPKIData" type="tns:SPKIDataType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="X509Data" type="tns:X509DataType"/>
+        <xs:any minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:ID"/>
+  </xs:complexType>
+  <xs:complexType name="KeyValueType" mixed="true">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="DSAKeyValue" type="tns:DSAKeyValueType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="RSAKeyValue" type="tns:RSAKeyValueType"/>
+        <xs:any minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DSAKeyValueType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="P" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Q" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="G" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Y" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="J" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Seed" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="PgenCounter" type="xs:base64Binary"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RSAKeyValueType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Modulus" type="xs:base64Binary"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="Exponent" type="xs:base64Binary"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PGPDataType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="1" name="PGPKeyID" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="PGPKeyPacket" type="xs:base64Binary"/>
+        <xs:any minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RetrievalMethodType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Transforms" type="tns:ArrayOfTransformType"/>
+    </xs:sequence>
+    <xs:attribute name="URI" type="xs:anyURI"/>
+    <xs:attribute name="Type" type="xs:anyURI"/>
+  </xs:complexType>
+  <xs:complexType name="SPKIDataType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SPKISexp" type="xs:base64Binary"/>
+      <xs:any minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="X509DataType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="1" name="X509CRL" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="X509Certificate" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="X509IssuerSerial" type="tns:X509IssuerSerialType"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="X509SKI" type="xs:base64Binary"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="X509SubjectName" type="xs:string"/>
+        <xs:any minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="X509IssuerSerialType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="X509IssuerName" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="X509SerialNumber" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObjectType" mixed="true">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Id" type="xs:ID"/>
+    <xs:attribute name="MimeType" type="xs:string"/>
+    <xs:attribute name="Encoding" type="xs:anyURI"/>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://wshomologacao.simplissweb.com.br/nfseservice.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+  <xs:complexType name="ddDuasStrings">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="P1" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="P2" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint></con:endpoints><con:operation id="027a8407-a26d-4f7e-ad13-6537c1080eb4" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/CancelarNfse" name="CancelarNfse" bindingOperationName="CancelarNfse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0c03f690-bd86-4c64-89fc-4bbc17fd447e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:CancelarNfse>
+         <!--Optional:-->
+         <sis:CancelarNfseEnvio>
+            <!--Optional:-->
+            <nfse:Pedido>
+               <!--Optional:-->
+               <nfse:InfPedidoCancelamento id="?">
+                  <!--Optional:-->
+                  <nfse:IdentificacaoNfse>
+                     <!--Optional:-->
+                     <nfse:Numero>?</nfse:Numero>
+                     <!--Optional:-->
+                     <nfse:Cnpj>?</nfse:Cnpj>
+                     <!--Optional:-->
+                     <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+                     <nfse:CodigoMunicipio>?</nfse:CodigoMunicipio>
+                  </nfse:IdentificacaoNfse>
+                  <!--Optional:-->
+                  <nfse:CodigoCancelamento>?</nfse:CodigoCancelamento>
+               </nfse:InfPedidoCancelamento>
+               <!--Optional:-->
+               <xd:Signature Id="?">
+                  <!--Optional:-->
+                  <xd:SignedInfo Id="?">
+                     <!--Optional:-->
+                     <xd:CanonicalizationMethod Algorithm="?">
+                        e
+                        <!--You may enter ANY elements at this point-->
+                        gero
+                     </xd:CanonicalizationMethod>
+                     <!--Optional:-->
+                     <xd:SignatureMethod Algorithm="?">
+                        cum
+                        <!--Optional:-->
+                        <xd:HMACOutputLength>?</xd:HMACOutputLength>
+                        sonoras
+                        <!--You may enter ANY elements at this point-->
+                        aeoliam
+                     </xd:SignatureMethod>
+                     <!--Zero or more repetitions:-->
+                     <xd:Reference Id="?" URI="?" Type="?">
+                        <!--Optional:-->
+                        <xd:Transforms>
+                           <!--Zero or more repetitions:-->
+                           <xd:Transform Algorithm="?">
+                              quae
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <!--Optional:-->
+                              <xd:XPath>?</xd:XPath>
+                              <!--You may enter ANY elements at this point-->
+                              ventos
+                           </xd:Transform>
+                        </xd:Transforms>
+                        <!--Optional:-->
+                        <xd:DigestMethod Algorithm="?">
+                           verrantque
+                           <!--You may enter ANY elements at this point-->
+                           temperat
+                        </xd:DigestMethod>
+                        <!--Optional:-->
+                        <xd:DigestValue>cid:528816363734</xd:DigestValue>
+                     </xd:Reference>
+                  </xd:SignedInfo>
+                  <!--Optional:-->
+                  <xd:SignatureValue Id="?">cid:743433344109</xd:SignatureValue>
+                  <!--Optional:-->
+                  <xd:KeyInfo Id="?">
+                     per
+                     <!--You have a CHOICE of the next 8 items at this level-->
+                     <!--Optional:-->
+                     <xd:KeyName>?</xd:KeyName>
+                     <!--Optional:-->
+                     <xd:KeyValue>
+                        turbine
+                        <!--You have a CHOICE of the next 3 items at this level-->
+                        <!--Optional:-->
+                        <xd:DSAKeyValue>
+                           <!--Optional:-->
+                           <xd:P>cid:315265343291</xd:P>
+                           <!--Optional:-->
+                           <xd:Q>cid:234215891075</xd:Q>
+                           <!--Optional:-->
+                           <xd:G>cid:851760632339</xd:G>
+                           <!--Optional:-->
+                           <xd:Y>cid:1115755023493</xd:Y>
+                           <!--Optional:-->
+                           <xd:J>cid:554294792633</xd:J>
+                           <!--Optional:-->
+                           <xd:Seed>cid:320958677434</xd:Seed>
+                           <!--Optional:-->
+                           <xd:PgenCounter>cid:1019595203314</xd:PgenCounter>
+                        </xd:DSAKeyValue>
+                        <!--Optional:-->
+                        <xd:RSAKeyValue>
+                           <!--Optional:-->
+                           <xd:Modulus>cid:787329902299</xd:Modulus>
+                           <!--Optional:-->
+                           <xd:Exponent>cid:1164794693912</xd:Exponent>
+                        </xd:RSAKeyValue>
+                        <!--You may enter ANY elements at this point-->
+                        circum
+                     </xd:KeyValue>
+                     <!--Optional:-->
+                     <xd:MgmtData>?</xd:MgmtData>
+                     <!--Optional:-->
+                     <xd:PGPData>
+                        <!--You have a CHOICE of the next 3 items at this level-->
+                        <!--Optional:-->
+                        <xd:PGPKeyID>cid:706551764799</xd:PGPKeyID>
+                        <!--Optional:-->
+                        <xd:PGPKeyPacket>cid:59828660334</xd:PGPKeyPacket>
+                        <!--You may enter ANY elements at this point-->
+                     </xd:PGPData>
+                     <!--Optional:-->
+                     <xd:RetrievalMethod URI="?" Type="?">
+                        <!--Optional:-->
+                        <xd:Transforms>
+                           <!--Zero or more repetitions:-->
+                           <xd:Transform Algorithm="?">
+                              regemque
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <!--Optional:-->
+                              <xd:XPath>?</xd:XPath>
+                              <!--You may enter ANY elements at this point-->
+                              nimborum
+                           </xd:Transform>
+                        </xd:Transforms>
+                     </xd:RetrievalMethod>
+                     <!--Optional:-->
+                     <xd:SPKIData>
+                        <!--Zero or more repetitions:-->
+                        <xd:SPKISexp>cid:723524658228</xd:SPKISexp>
+                        <!--You may enter ANY elements at this point-->
+                     </xd:SPKIData>
+                     <!--Optional:-->
+                     <xd:X509Data>
+                        <!--You have a CHOICE of the next 6 items at this level-->
+                        <!--Optional:-->
+                        <xd:X509CRL>cid:1057245797593</xd:X509CRL>
+                        <!--Optional:-->
+                        <xd:X509Certificate>cid:401214766895</xd:X509Certificate>
+                        <!--Optional:-->
+                        <xd:X509IssuerSerial>
+                           <!--Optional:-->
+                           <xd:X509IssuerName>?</xd:X509IssuerName>
+                           <!--Optional:-->
+                           <xd:X509SerialNumber>?</xd:X509SerialNumber>
+                        </xd:X509IssuerSerial>
+                        <!--Optional:-->
+                        <xd:X509SKI>cid:1497290056730</xd:X509SKI>
+                        <!--Optional:-->
+                        <xd:X509SubjectName>?</xd:X509SubjectName>
+                        <!--You may enter ANY elements at this point-->
+                     </xd:X509Data>
+                     <!--You may enter ANY elements at this point-->
+                     fremunt
+                  </xd:KeyInfo>
+                  <!--Zero or more repetitions:-->
+                  <xd:Object Id="?" MimeType="?" Encoding="?">
+                     foedere
+                     <!--You may enter ANY elements at this point-->
+                     ferant
+                  </xd:Object>
+               </xd:Signature>
+            </nfse:Pedido>
+         </sis:CancelarNfseEnvio>
+         <!--Optional:-->
+         <sis:pParam>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
+         </sis:pParam>
+      </sis:CancelarNfse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/CancelarNfse"/></con:call></con:operation><con:operation id="3fb77733-e715-4d8a-b8ea-a70240c6d281" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarLoteRps" name="ConsultarLoteRps" bindingOperationName="ConsultarLoteRps" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fa214563-16df-4f75-b7e4-21eb80dad779" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:ConsultarLoteRps>
+         <!--Optional:-->
+         <sis:ConsultarLoteRpsEnvio>
+            <!--Optional:-->
+            <nfse:Prestador>
+               <!--Optional:-->
+               <nfse:Cnpj>?</nfse:Cnpj>
+               <!--Optional:-->
+               <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+            </nfse:Prestador>
+            <!--Optional:-->
+            <nfse:Protocolo>?</nfse:Protocolo>
+         </sis:ConsultarLoteRpsEnvio>
+         <!--Optional:-->
+         <sis:pParam>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
+         </sis:pParam>
+      </sis:ConsultarLoteRps>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarLoteRps"/></con:call></con:operation><con:operation id="73308d85-8cc8-437f-8ba5-3ea4a13fc630" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfse" name="ConsultarNfse" bindingOperationName="ConsultarNfse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="586b5528-98fa-493e-ad2a-76e52a69ec71" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:ConsultarNfse>
+         <sis:ConsultarNfseEnvio>
+            <nfse:Prestador>
+               <nfse:Cnpj>55347520000167</nfse:Cnpj>
+               <nfse:InscricaoMunicipal>6389</nfse:InscricaoMunicipal>
+            </nfse:Prestador>
+            <nfse:NumeroNfse>1</nfse:NumeroNfse>
+         </sis:ConsultarNfseEnvio>
+         <sis:pParam>
+            <sis1:P1>55347520000167</sis1:P1>
+            <sis1:P2>gA1WGkNpFhT9bZH6</sis1:P2>
+         </sis:pParam>
+      </sis:ConsultarNfse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfse"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="51ad1a81-8250-4cdb-8468-6c1b1bae5ac8" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfsePorRps" name="ConsultarNfsePorRps" bindingOperationName="ConsultarNfsePorRps" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="83dce612-6562-4d18-b123-30d957bd9006" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:ConsultarNfsePorRps>
+         <!--Optional:-->
+         <sis:ConsultarNfseRpsEnvio>
+            <!--Optional:-->
+            <nfse:IdentificacaoRps>
+               <!--Optional:-->
+               <nfse:Numero>?</nfse:Numero>
+               <!--Optional:-->
+               <nfse:Serie>?</nfse:Serie>
+               <nfse:Tipo>?</nfse:Tipo>
+            </nfse:IdentificacaoRps>
+            <!--Optional:-->
+            <nfse:Prestador>
+               <!--Optional:-->
+               <nfse:Cnpj>?</nfse:Cnpj>
+               <!--Optional:-->
+               <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+            </nfse:Prestador>
+         </sis:ConsultarNfseRpsEnvio>
+         <!--Optional:-->
+         <sis:pParam>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
+         </sis:pParam>
+      </sis:ConsultarNfsePorRps>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarNfsePorRps"/></con:call></con:operation><con:operation id="6edc2073-435a-4562-b9ad-3f5703ca2973" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps" name="ConsultarSituacaoLoteRps" bindingOperationName="ConsultarSituacaoLoteRps" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="491fba28-3037-457a-b1ca-bdeb3c3c237e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:ConsultarSituacaoLoteRps>
+         <!--Optional:-->
+         <sis:ConsultarSituacaoLoteRpsEnvio>
+            <!--Optional:-->
+            <nfse:Prestador>
+               <!--Optional:-->
+               <nfse:Cnpj>?</nfse:Cnpj>
+               <!--Optional:-->
+               <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+            </nfse:Prestador>
+            <!--Optional:-->
+            <nfse:Protocolo>?</nfse:Protocolo>
+         </sis:ConsultarSituacaoLoteRpsEnvio>
+         <!--Optional:-->
+         <sis:pParam>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
+         </sis:pParam>
+      </sis:ConsultarSituacaoLoteRps>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps"/></con:call></con:operation><con:operation id="af42aa5c-397f-4a84-8fa1-9ab64e7008e0" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse" name="GerarNfse" bindingOperationName="GerarNfse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="de89405c-1f92-4ed3-8549-85a9824d596f" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:GerarNfse>
+         <sis:GerarNovaNfseEnvio>
+            <nfse:Prestador>
+               <nfse:Cnpj>55347520000167</nfse:Cnpj>
+               <nfse:InscricaoMunicipal>6389</nfse:InscricaoMunicipal>
+            </nfse:Prestador>
+            <nfse:InformacaoNfse id="123">
+               <nfse:NaturezaOperacao>3</nfse:NaturezaOperacao>
+               <nfse:RegimeEspecialTributacao>9</nfse:RegimeEspecialTributacao>
+               <nfse:OptanteSimplesNacional>2</nfse:OptanteSimplesNacional>
+               <nfse:IncentivadorCultural>2</nfse:IncentivadorCultural>
+               <nfse:Status>1</nfse:Status>
+               <nfse:Competencia>2024-02-19T13:55:46.000Z</nfse:Competencia>
+               <nfse:OutrasInformacoes>teste</nfse:OutrasInformacoes>
+               <nfse:Servico>
+                  <nfse:Valores>
+                     <nfse:ValorServicos>100</nfse:ValorServicos>
+                     <nfse:ValorDeducoes>0</nfse:ValorDeducoes>
+                     <nfse:ValorPis>0</nfse:ValorPis>
+                     <nfse:ValorCofins>0</nfse:ValorCofins>
+                     <nfse:ValorInss>0</nfse:ValorInss>
+                     <nfse:ValorIr>0</nfse:ValorIr>
+                     <nfse:ValorCsll>0</nfse:ValorCsll>
+                     <nfse:IssRetido>2</nfse:IssRetido>
+                     <nfse:ValorIss>0</nfse:ValorIss>
+                     <nfse:ValorIssRetido>0</nfse:ValorIssRetido>
+                     <nfse:OutrasRetencoes>0</nfse:OutrasRetencoes>
+                     <nfse:BaseCalculo>100</nfse:BaseCalculo>
+                     <nfse:Aliquota>0</nfse:Aliquota>
+                     <nfse:ValorLiquidoNfse>100</nfse:ValorLiquidoNfse>
+                  </nfse:Valores>
+                  <nfse:ItemListaServico>35.01</nfse:ItemListaServico>
+                  <nfse:CodigoCnae>5822101</nfse:CodigoCnae>
+                  <nfse:CodigoTributacaoMunicipio>35.01</nfse:CodigoTributacaoMunicipio>
+                  <nfse:Discriminacao>teste</nfse:Discriminacao>
+                  <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
+                  <nfse:ItensServico>
+                     <nfse:Descricao>Teste</nfse:Descricao>
+                     <nfse:Quantidade>1</nfse:Quantidade>
+                     <nfse:ValorUnitario>100</nfse:ValorUnitario>
+                     <nfse:IssTributavel>1</nfse:IssTributavel>
+                  </nfse:ItensServico>
+               </nfse:Servico>
+               <nfse:Tomador>
+                  <nfse:IdentificacaoTomador>
+                     <nfse:CpfCnpj>
+                        <nfse:Cpf>34969247803</nfse:Cpf>
+                     </nfse:CpfCnpj>
+                  </nfse:IdentificacaoTomador>
+                  <nfse:RazaoSocial>teste</nfse:RazaoSocial>
+                  <nfse:Endereco>
+                     <nfse:Endereco>Rua Amélio Domingos Mungo</nfse:Endereco>
+                     <nfse:Numero>772</nfse:Numero>
+                     <nfse:Complemento>teste</nfse:Complemento>
+                     <nfse:Bairro>Jardim Maracanã</nfse:Bairro>
+                     <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
+                     <nfse:Uf>SP</nfse:Uf>
+                     <nfse:Cep>19026</nfse:Cep>
+                  </nfse:Endereco>
+                  <nfse:Contato>
+                     <nfse:Telefone>18981449536</nfse:Telefone>
+                     <nfse:Email>weslleybent@gmail.com</nfse:Email>
+                  </nfse:Contato>
+               </nfse:Tomador>
+            </nfse:InformacaoNfse>
+         </sis:GerarNovaNfseEnvio>
+         <sis:pParam>
+            <sis1:P1>55347520000167</sis1:P1>
+            <sis1:P2>gA1WGkNpFhT9bZH6</sis1:P2>
+         </sis:pParam>
+      </sis:GerarNfse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="5f8e836e-1568-4b7d-8ae3-71bad4c1740c" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/RecepcionarLoteRps" name="RecepcionarLoteRps" bindingOperationName="RecepcionarLoteRps" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="591831cc-a5d5-4d47-8be0-e57ecd270f09" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:RecepcionarLoteRps>
+         <!--Optional:-->
+         <sis:EnviarLoteRpsEnvio>
+            <!--Optional:-->
+            <nfse:LoteRps id="?">
+               <!--Optional:-->
+               <nfse:NumeroLote>?</nfse:NumeroLote>
+               <!--Optional:-->
+               <nfse:Cnpj>?</nfse:Cnpj>
+               <!--Optional:-->
+               <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+               <nfse:QuantidadeRps>?</nfse:QuantidadeRps>
+               <!--Optional:-->
+               <nfse:ListaRps>
+                  <!--Zero or more repetitions:-->
+                  <nfse:Rps>
+                     <!--Optional:-->
+                     <nfse:InfRps id="?">
+                        <!--Optional:-->
+                        <nfse:IdentificacaoRps>
+                           <!--Optional:-->
+                           <nfse:Numero>?</nfse:Numero>
+                           <!--Optional:-->
+                           <nfse:Serie>?</nfse:Serie>
+                           <nfse:Tipo>?</nfse:Tipo>
+                        </nfse:IdentificacaoRps>
+                        <nfse:DataEmissao>?</nfse:DataEmissao>
+                        <nfse:NaturezaOperacao>?</nfse:NaturezaOperacao>
+                        <!--Optional:-->
+                        <nfse:RegimeEspecialTributacao>?</nfse:RegimeEspecialTributacao>
+                        <nfse:OptanteSimplesNacional>?</nfse:OptanteSimplesNacional>
+                        <nfse:IncentivadorCultural>?</nfse:IncentivadorCultural>
+                        <nfse:Status>?</nfse:Status>
+                        <!--Optional:-->
+                        <nfse:RpsSubstituido>
+                           <!--Optional:-->
+                           <nfse:Numero>?</nfse:Numero>
+                           <!--Optional:-->
+                           <nfse:Serie>?</nfse:Serie>
+                           <nfse:Tipo>?</nfse:Tipo>
+                        </nfse:RpsSubstituido>
+                        <!--Optional:-->
+                        <nfse:OutrasInformacoes>?</nfse:OutrasInformacoes>
+                        <!--Optional:-->
+                        <nfse:Servico>
+                           <!--Optional:-->
+                           <nfse:Valores>
+                              <nfse:ValorServicos>?</nfse:ValorServicos>
+                              <!--Optional:-->
+                              <nfse:ValorDeducoes>?</nfse:ValorDeducoes>
+                              <!--Optional:-->
+                              <nfse:ValorPis>?</nfse:ValorPis>
+                              <!--Optional:-->
+                              <nfse:ValorCofins>?</nfse:ValorCofins>
+                              <!--Optional:-->
+                              <nfse:ValorInss>?</nfse:ValorInss>
+                              <!--Optional:-->
+                              <nfse:ValorIr>?</nfse:ValorIr>
+                              <!--Optional:-->
+                              <nfse:ValorCsll>?</nfse:ValorCsll>
+                              <nfse:IssRetido>?</nfse:IssRetido>
+                              <!--Optional:-->
+                              <nfse:ValorIss>?</nfse:ValorIss>
+                              <!--Optional:-->
+                              <nfse:ValorIssRetido>?</nfse:ValorIssRetido>
+                              <!--Optional:-->
+                              <nfse:OutrasRetencoes>?</nfse:OutrasRetencoes>
+                              <!--Optional:-->
+                              <nfse:BaseCalculo>?</nfse:BaseCalculo>
+                              <!--Optional:-->
+                              <nfse:Aliquota>?</nfse:Aliquota>
+                              <!--Optional:-->
+                              <nfse:ValorLiquidoNfse>?</nfse:ValorLiquidoNfse>
+                              <!--Optional:-->
+                              <nfse:DescontoIncondicionado>?</nfse:DescontoIncondicionado>
+                              <!--Optional:-->
+                              <nfse:DescontoCondicionado>?</nfse:DescontoCondicionado>
+                           </nfse:Valores>
+                           <!--Optional:-->
+                           <nfse:ItemListaServico>?</nfse:ItemListaServico>
+                           <!--Optional:-->
+                           <nfse:CodigoCnae>?</nfse:CodigoCnae>
+                           <!--Optional:-->
+                           <nfse:CodigoTributacaoMunicipio>?</nfse:CodigoTributacaoMunicipio>
+                           <!--Optional:-->
+                           <nfse:Discriminacao>?</nfse:Discriminacao>
+                           <nfse:CodigoMunicipio>?</nfse:CodigoMunicipio>
+                           <!--Zero or more repetitions:-->
+                           <nfse:ItensServico>
+                              <!--Optional:-->
+                              <nfse:Descricao>?</nfse:Descricao>
+                              <nfse:Quantidade>?</nfse:Quantidade>
+                              <nfse:ValorUnitario>?</nfse:ValorUnitario>
+                              <!--Optional:-->
+                              <nfse:IssTributavel>?</nfse:IssTributavel>
+                           </nfse:ItensServico>
+                        </nfse:Servico>
+                        <!--Optional:-->
+                        <nfse:Prestador>
+                           <!--Optional:-->
+                           <nfse:Cnpj>?</nfse:Cnpj>
+                           <!--Optional:-->
+                           <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+                        </nfse:Prestador>
+                        <!--Optional:-->
+                        <nfse:Tomador>
+                           <!--Optional:-->
+                           <nfse:IdentificacaoTomador>
+                              <!--Optional:-->
+                              <nfse:CpfCnpj>
+                                 <!--You have a CHOICE of the next 2 items at this level-->
+                                 <!--Optional:-->
+                                 <nfse:Cnpj>?</nfse:Cnpj>
+                                 <!--Optional:-->
+                                 <nfse:Cpf>?</nfse:Cpf>
+                              </nfse:CpfCnpj>
+                              <!--Optional:-->
+                              <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+                              <!--Optional:-->
+                              <nfse:InscricaoEstadual>?</nfse:InscricaoEstadual>
+                           </nfse:IdentificacaoTomador>
+                           <!--Optional:-->
+                           <nfse:RazaoSocial>?</nfse:RazaoSocial>
+                           <!--Optional:-->
+                           <nfse:Endereco>
+                              <!--Optional:-->
+                              <nfse:Endereco>?</nfse:Endereco>
+                              <!--Optional:-->
+                              <nfse:Numero>?</nfse:Numero>
+                              <!--Optional:-->
+                              <nfse:Complemento>?</nfse:Complemento>
+                              <!--Optional:-->
+                              <nfse:Bairro>?</nfse:Bairro>
+                              <!--Optional:-->
+                              <nfse:CodigoMunicipio>?</nfse:CodigoMunicipio>
+                              <!--Optional:-->
+                              <nfse:Uf>?</nfse:Uf>
+                              <!--Optional:-->
+                              <nfse:Cep>?</nfse:Cep>
+                           </nfse:Endereco>
+                           <!--Optional:-->
+                           <nfse:Contato>
+                              <!--Optional:-->
+                              <nfse:Telefone>?</nfse:Telefone>
+                              <!--Optional:-->
+                              <nfse:Email>?</nfse:Email>
+                           </nfse:Contato>
+                        </nfse:Tomador>
+                        <!--Optional:-->
+                        <nfse:IntermediarioServico>
+                           <!--Optional:-->
+                           <nfse:RazaoSocial>?</nfse:RazaoSocial>
+                           <!--Optional:-->
+                           <nfse:CpfCnpj>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <!--Optional:-->
+                              <nfse:Cnpj>?</nfse:Cnpj>
+                              <!--Optional:-->
+                              <nfse:Cpf>?</nfse:Cpf>
+                           </nfse:CpfCnpj>
+                           <!--Optional:-->
+                           <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+                        </nfse:IntermediarioServico>
+                        <!--Optional:-->
+                        <nfse:ContrucaoCivil>
+                           <!--Optional:-->
+                           <nfse:CodigoObra>?</nfse:CodigoObra>
+                           <!--Optional:-->
+                           <nfse:Art>?</nfse:Art>
+                        </nfse:ContrucaoCivil>
+                     </nfse:InfRps>
+                     <!--Optional:-->
+                     <xd:Signature Id="?">
+                        <!--Optional:-->
+                        <xd:SignedInfo Id="?">
+                           <!--Optional:-->
+                           <xd:CanonicalizationMethod Algorithm="?">
+                              e
+                              <!--You may enter ANY elements at this point-->
+                              gero
+                           </xd:CanonicalizationMethod>
+                           <!--Optional:-->
+                           <xd:SignatureMethod Algorithm="?">
+                              cum
+                              <!--Optional:-->
+                              <xd:HMACOutputLength>?</xd:HMACOutputLength>
+                              sonoras
+                              <!--You may enter ANY elements at this point-->
+                              aeoliam
+                           </xd:SignatureMethod>
+                           <!--Zero or more repetitions:-->
+                           <xd:Reference Id="?" URI="?" Type="?">
+                              <!--Optional:-->
+                              <xd:Transforms>
+                                 <!--Zero or more repetitions:-->
+                                 <xd:Transform Algorithm="?">
+                                    quae
+                                    <!--You have a CHOICE of the next 2 items at this level-->
+                                    <!--Optional:-->
+                                    <xd:XPath>?</xd:XPath>
+                                    <!--You may enter ANY elements at this point-->
+                                    ventos
+                                 </xd:Transform>
+                              </xd:Transforms>
+                              <!--Optional:-->
+                              <xd:DigestMethod Algorithm="?">
+                                 verrantque
+                                 <!--You may enter ANY elements at this point-->
+                                 temperat
+                              </xd:DigestMethod>
+                              <!--Optional:-->
+                              <xd:DigestValue>cid:55719798922</xd:DigestValue>
+                           </xd:Reference>
+                        </xd:SignedInfo>
+                        <!--Optional:-->
+                        <xd:SignatureValue Id="?">cid:1326365473259</xd:SignatureValue>
+                        <!--Optional:-->
+                        <xd:KeyInfo Id="?">
+                           per
+                           <!--You have a CHOICE of the next 8 items at this level-->
+                           <!--Optional:-->
+                           <xd:KeyName>?</xd:KeyName>
+                           <!--Optional:-->
+                           <xd:KeyValue>
+                              turbine
+                              <!--You have a CHOICE of the next 3 items at this level-->
+                              <!--Optional:-->
+                              <xd:DSAKeyValue>
+                                 <!--Optional:-->
+                                 <xd:P>cid:440475636438</xd:P>
+                                 <!--Optional:-->
+                                 <xd:Q>cid:86993083114</xd:Q>
+                                 <!--Optional:-->
+                                 <xd:G>cid:565827763841</xd:G>
+                                 <!--Optional:-->
+                                 <xd:Y>cid:1597717941440</xd:Y>
+                                 <!--Optional:-->
+                                 <xd:J>cid:1247294451721</xd:J>
+                                 <!--Optional:-->
+                                 <xd:Seed>cid:1005442800429</xd:Seed>
+                                 <!--Optional:-->
+                                 <xd:PgenCounter>cid:1299183716945</xd:PgenCounter>
+                              </xd:DSAKeyValue>
+                              <!--Optional:-->
+                              <xd:RSAKeyValue>
+                                 <!--Optional:-->
+                                 <xd:Modulus>cid:62785110049</xd:Modulus>
+                                 <!--Optional:-->
+                                 <xd:Exponent>cid:1099672704015</xd:Exponent>
+                              </xd:RSAKeyValue>
+                              <!--You may enter ANY elements at this point-->
+                              circum
+                           </xd:KeyValue>
+                           <!--Optional:-->
+                           <xd:MgmtData>?</xd:MgmtData>
+                           <!--Optional:-->
+                           <xd:PGPData>
+                              <!--You have a CHOICE of the next 3 items at this level-->
+                              <!--Optional:-->
+                              <xd:PGPKeyID>cid:52634577726</xd:PGPKeyID>
+                              <!--Optional:-->
+                              <xd:PGPKeyPacket>cid:254028700438</xd:PGPKeyPacket>
+                              <!--You may enter ANY elements at this point-->
+                           </xd:PGPData>
+                           <!--Optional:-->
+                           <xd:RetrievalMethod URI="?" Type="?">
+                              <!--Optional:-->
+                              <xd:Transforms>
+                                 <!--Zero or more repetitions:-->
+                                 <xd:Transform Algorithm="?">
+                                    regemque
+                                    <!--You have a CHOICE of the next 2 items at this level-->
+                                    <!--Optional:-->
+                                    <xd:XPath>?</xd:XPath>
+                                    <!--You may enter ANY elements at this point-->
+                                    nimborum
+                                 </xd:Transform>
+                              </xd:Transforms>
+                           </xd:RetrievalMethod>
+                           <!--Optional:-->
+                           <xd:SPKIData>
+                              <!--Zero or more repetitions:-->
+                              <xd:SPKISexp>cid:331090148274</xd:SPKISexp>
+                              <!--You may enter ANY elements at this point-->
+                           </xd:SPKIData>
+                           <!--Optional:-->
+                           <xd:X509Data>
+                              <!--You have a CHOICE of the next 6 items at this level-->
+                              <!--Optional:-->
+                              <xd:X509CRL>cid:569385345912</xd:X509CRL>
+                              <!--Optional:-->
+                              <xd:X509Certificate>cid:539044717245</xd:X509Certificate>
+                              <!--Optional:-->
+                              <xd:X509IssuerSerial>
+                                 <!--Optional:-->
+                                 <xd:X509IssuerName>?</xd:X509IssuerName>
+                                 <!--Optional:-->
+                                 <xd:X509SerialNumber>?</xd:X509SerialNumber>
+                              </xd:X509IssuerSerial>
+                              <!--Optional:-->
+                              <xd:X509SKI>cid:1523373743329</xd:X509SKI>
+                              <!--Optional:-->
+                              <xd:X509SubjectName>?</xd:X509SubjectName>
+                              <!--You may enter ANY elements at this point-->
+                           </xd:X509Data>
+                           <!--You may enter ANY elements at this point-->
+                           fremunt
+                        </xd:KeyInfo>
+                        <!--Zero or more repetitions:-->
+                        <xd:Object Id="?" MimeType="?" Encoding="?">
+                           foedere
+                           <!--You may enter ANY elements at this point-->
+                           ferant
+                        </xd:Object>
+                     </xd:Signature>
+                  </nfse:Rps>
+               </nfse:ListaRps>
+            </nfse:LoteRps>
+            <!--Optional:-->
+            <xd:Signature Id="?">
+               <!--Optional:-->
+               <xd:SignedInfo Id="?">
+                  <!--Optional:-->
+                  <xd:CanonicalizationMethod Algorithm="?">
+                     profundum
+                     <!--You may enter ANY elements at this point-->
+                     sceptra
+                  </xd:CanonicalizationMethod>
+                  <!--Optional:-->
+                  <xd:SignatureMethod Algorithm="?">
+                     et
+                     <!--Optional:-->
+                     <xd:HMACOutputLength>?</xd:HMACOutputLength>
+                     turbine
+                     <!--You may enter ANY elements at this point-->
+                     iovis
+                  </xd:SignatureMethod>
+                  <!--Zero or more repetitions:-->
+                  <xd:Reference Id="?" URI="?" Type="?">
+                     <!--Optional:-->
+                     <xd:Transforms>
+                        <!--Zero or more repetitions:-->
+                        <xd:Transform Algorithm="?">
+                           flammato
+                           <!--You have a CHOICE of the next 2 items at this level-->
+                           <!--Optional:-->
+                           <xd:XPath>?</xd:XPath>
+                           <!--You may enter ANY elements at this point-->
+                           speluncis
+                        </xd:Transform>
+                     </xd:Transforms>
+                     <!--Optional:-->
+                     <xd:DigestMethod Algorithm="?">
+                        profundum
+                        <!--You may enter ANY elements at this point-->
+                        bella
+                     </xd:DigestMethod>
+                     <!--Optional:-->
+                     <xd:DigestValue>cid:1537556907282</xd:DigestValue>
+                  </xd:Reference>
+               </xd:SignedInfo>
+               <!--Optional:-->
+               <xd:SignatureValue Id="?">cid:941446483458</xd:SignatureValue>
+               <!--Optional:-->
+               <xd:KeyInfo Id="?">
+                  nubibus
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <!--Optional:-->
+                  <xd:KeyName>?</xd:KeyName>
+                  <!--Optional:-->
+                  <xd:KeyValue>
+                     flammas
+                     <!--You have a CHOICE of the next 3 items at this level-->
+                     <!--Optional:-->
+                     <xd:DSAKeyValue>
+                        <!--Optional:-->
+                        <xd:P>cid:639645483195</xd:P>
+                        <!--Optional:-->
+                        <xd:Q>cid:628583451760</xd:Q>
+                        <!--Optional:-->
+                        <xd:G>cid:1153343069019</xd:G>
+                        <!--Optional:-->
+                        <xd:Y>cid:1562286882716</xd:Y>
+                        <!--Optional:-->
+                        <xd:J>cid:258772291308</xd:J>
+                        <!--Optional:-->
+                        <xd:Seed>cid:951356050645</xd:Seed>
+                        <!--Optional:-->
+                        <xd:PgenCounter>cid:1633733144192</xd:PgenCounter>
+                     </xd:DSAKeyValue>
+                     <!--Optional:-->
+                     <xd:RSAKeyValue>
+                        <!--Optional:-->
+                        <xd:Modulus>cid:1706720403338</xd:Modulus>
+                        <!--Optional:-->
+                        <xd:Exponent>cid:1559711872708</xd:Exponent>
+                     </xd:RSAKeyValue>
+                     <!--You may enter ANY elements at this point-->
+                     ac
+                  </xd:KeyValue>
+                  <!--Optional:-->
+                  <xd:MgmtData>?</xd:MgmtData>
+                  <!--Optional:-->
+                  <xd:PGPData>
+                     <!--You have a CHOICE of the next 3 items at this level-->
+                     <!--Optional:-->
+                     <xd:PGPKeyID>cid:427211302640</xd:PGPKeyID>
+                     <!--Optional:-->
+                     <xd:PGPKeyPacket>cid:837396894712</xd:PGPKeyPacket>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:PGPData>
+                  <!--Optional:-->
+                  <xd:RetrievalMethod URI="?" Type="?">
+                     <!--Optional:-->
+                     <xd:Transforms>
+                        <!--Zero or more repetitions:-->
+                        <xd:Transform Algorithm="?">
+                           hoc
+                           <!--You have a CHOICE of the next 2 items at this level-->
+                           <!--Optional:-->
+                           <xd:XPath>?</xd:XPath>
+                           <!--You may enter ANY elements at this point-->
+                           rapidum
+                        </xd:Transform>
+                     </xd:Transforms>
+                  </xd:RetrievalMethod>
+                  <!--Optional:-->
+                  <xd:SPKIData>
+                     <!--Zero or more repetitions:-->
+                     <xd:SPKISexp>cid:409725978068</xd:SPKISexp>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:SPKIData>
+                  <!--Optional:-->
+                  <xd:X509Data>
+                     <!--You have a CHOICE of the next 6 items at this level-->
+                     <!--Optional:-->
+                     <xd:X509CRL>cid:391956331039</xd:X509CRL>
+                     <!--Optional:-->
+                     <xd:X509Certificate>cid:1100170181876</xd:X509Certificate>
+                     <!--Optional:-->
+                     <xd:X509IssuerSerial>
+                        <!--Optional:-->
+                        <xd:X509IssuerName>?</xd:X509IssuerName>
+                        <!--Optional:-->
+                        <xd:X509SerialNumber>?</xd:X509SerialNumber>
+                     </xd:X509IssuerSerial>
+                     <!--Optional:-->
+                     <xd:X509SKI>cid:244909283449</xd:X509SKI>
+                     <!--Optional:-->
+                     <xd:X509SubjectName>?</xd:X509SubjectName>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:X509Data>
+                  <!--You may enter ANY elements at this point-->
+                  ac
+               </xd:KeyInfo>
+               <!--Zero or more repetitions:-->
+               <xd:Object Id="?" MimeType="?" Encoding="?">
+                  caelumque
+                  <!--You may enter ANY elements at this point-->
+                  speluncis
+               </xd:Object>
+            </xd:Signature>
+         </sis:EnviarLoteRpsEnvio>
+         <!--Optional:-->
+         <sis:pParam>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
+         </sis:pParam>
+      </sis:RecepcionarLoteRps>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/RecepcionarLoteRps"/></con:call></con:operation><con:operation id="7b8e76b6-700d-462c-a80a-a752ef964d36" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/Versao" name="Versao" bindingOperationName="Versao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="74d725ea-ad2b-422f-83a9-0ddb68746675" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sis:Versao/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/Versao"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
