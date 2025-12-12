@@ -57,6 +57,10 @@ class Nfse{
         return $this->soapClient->CancelarNfse($data);
     }
     
+    public function getLastRequest(){
+        return $this->soapClient->getCustomLastRequest();
+    }
+    
     public function getLastResponse(){
         return $this->soapClient->__getLastResponse();
     }

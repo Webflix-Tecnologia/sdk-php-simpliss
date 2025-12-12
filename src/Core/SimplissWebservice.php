@@ -9,6 +9,8 @@ class SimplissWebservice extends \SoapClient{
     
     const HOMOLOGATION_URL = 'http://wshomologacao.simplissweb.com.br/nfseservice.svc?wsdl';
     
+    private $customLastRequest = null;
+    
     public function __construct($wsdl, $options) {
         if (isset($options['timeout'])) {
                 $this->__setTimeout($options['timeout']);
@@ -30,6 +32,8 @@ class SimplissWebservice extends \SoapClient{
         $request = preg_replace('/ns2/', 'sis', $request);
         $request = preg_replace('/ns1/', 'nfse', $request);
         $request = preg_replace('/ns3/', 'sis1', $request);
+        
+        $this->customLastRequest = $request;
         
         if (($this->timeout === 0) && ($this->connecttimeout === 0)){
             // Call via parent because we require no timeout
@@ -116,5 +120,9 @@ class SimplissWebservice extends \SoapClient{
 
     public function __getSSLVerifyPeer(){
         return $this->sslverifypeer;
+    }
+    
+    public function getCustomLastRequest(){
+        return $this->customLastRequest;
     }
 }
