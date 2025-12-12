@@ -1185,79 +1185,390 @@
          </sis:pParam>
       </sis:ConsultarSituacaoLoteRps>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps"/></con:call></con:operation><con:operation id="af42aa5c-397f-4a84-8fa1-9ab64e7008e0" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse" name="GerarNfse" bindingOperationName="GerarNfse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="de89405c-1f92-4ed3-8549-85a9824d596f" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/ConsultarSituacaoLoteRps"/></con:call></con:operation><con:operation id="af42aa5c-397f-4a84-8fa1-9ab64e7008e0" isOneWay="false" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse" name="GerarNfse" bindingOperationName="GerarNfse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="de89405c-1f92-4ed3-8549-85a9824d596f" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd"
+    xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse"
+    xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
+    <soapenv:Body>
+        <sis:GerarNfse>
+            <sis:GerarNovaNfseEnvio>
+                <nfse:Prestador>
+                    <nfse:Cnpj>62427922000137</nfse:Cnpj>
+                    <nfse:InscricaoMunicipal>143049</nfse:InscricaoMunicipal>
+                </nfse:Prestador>
+                <nfse:InformacaoNfse>
+                    <nfse:NaturezaOperacao>1</nfse:NaturezaOperacao>
+                    <nfse:RegimeEspecialTributacao>6</nfse:RegimeEspecialTributacao>
+                    <nfse:OptanteSimplesNacional>1</nfse:OptanteSimplesNacional>
+                    <nfse:IncentivadorCultural>2</nfse:IncentivadorCultural>
+                    <nfse:Status>1</nfse:Status>
+                    <nfse:Competencia>2025-12-12T11:43:49.000Z</nfse:Competencia>
+                    <nfse:OutrasInformacoes />
+                    <nfse:Servico>
+                        <nfse:Valores>
+                            <nfse:ValorServicos>103,39</nfse:ValorServicos>
+                            <nfse:ValorDeducoes>0</nfse:ValorDeducoes>
+                            <nfse:ValorPis>0</nfse:ValorPis>
+                            <nfse:ValorCofins>0</nfse:ValorCofins>
+                            <nfse:ValorInss>0</nfse:ValorInss>
+                            <nfse:ValorIr>0</nfse:ValorIr>
+                            <nfse:ValorCsll>0</nfse:ValorCsll>
+                            <nfse:IssRetido>2</nfse:IssRetido>
+                            <nfse:ValorIss>2,078</nfse:ValorIss>
+                            <nfse:ValorIssRetido>0</nfse:ValorIssRetido>
+                            <nfse:OutrasRetencoes>0</nfse:OutrasRetencoes>
+                            <nfse:BaseCalculo>103,39</nfse:BaseCalculo>
+                            <nfse:Aliquota>2,0100</nfse:Aliquota>
+                            <nfse:ValorLiquidoNfse>103,39</nfse:ValorLiquidoNfse>
+                        </nfse:Valores>
+                        <nfse:ItemListaServico>1008</nfse:ItemListaServico>
+                        <nfse:CodigoCnae>7490104</nfse:CodigoCnae>
+                        <nfse:CodigoTributacaoMunicipio>1008</nfse:CodigoTributacaoMunicipio>
+                        <nfse:Discriminacao>Serviços prestados</nfse:Discriminacao>
+                        <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
+                        <nfse:ItensServico>
+                            <nfse:Descricao>Assinatura CRM</nfse:Descricao>
+                            <nfse:Quantidade>1</nfse:Quantidade>
+                            <nfse:ValorUnitario>99,90</nfse:ValorUnitario>
+                            <nfse:IssTributavel>1</nfse:IssTributavel>
+                        </nfse:ItensServico>
+                        <nfse:ItensServico>
+                            <nfse:Descricao>Comissão Venda Marketplace</nfse:Descricao>
+                            <nfse:Quantidade>1</nfse:Quantidade>
+                            <nfse:ValorUnitario>3,49</nfse:ValorUnitario>
+                            <nfse:IssTributavel>1</nfse:IssTributavel>
+                        </nfse:ItensServico>
+                    </nfse:Servico>
+                    <nfse:Tomador>
+                        <nfse:IdentificacaoTomador>
+                            <nfse:CpfCnpj>53422912000118</nfse:CpfCnpj>
+                            <nfse:InscricaoMunicipal>104566</nfse:InscricaoMunicipal>
+                            <nfse:InscricaoEstadual />
+                        </nfse:IdentificacaoTomador>
+                        <nfse:RazaoSocial>Webflix Solucoes em Sistemas e Tecnologia da Informacao
+                            LTDA</nfse:RazaoSocial>
+                        <nfse:Endereco>
+                            <nfse:Endereco>Avenida Comendador Alberto Bonfiglioli</nfse:Endereco>
+                            <nfse:Numero>2700</nfse:Numero>
+                            <nfse:Complemento></nfse:Complemento>
+                            <nfse:Bairro>Jardim Itaipu</nfse:Bairro>
+                            <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
+                            <nfse:Uf>SP</nfse:Uf>
+                            <nfse:Cep>19063390</nfse:Cep>
+                        </nfse:Endereco>
+                        <nfse:Contato>
+                            <nfse:Telefone>18981449536</nfse:Telefone>
+                            <nfse:Email>weslleybent@gmail.com</nfse:Email>
+                        </nfse:Contato>
+                    </nfse:Tomador>
+                </nfse:InformacaoNfse>
+            </sis:GerarNovaNfseEnvio>
+            <sis:pParam>
+                <sis1:P1>62427922000137</sis1:P1>
+                <sis1:P2><![CDATA[1R&0>j]]]]>><![CDATA[</sis1:P2>
+            </sis:pParam>
+        </sis:GerarNfse>
+    </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.sistema.com.br/Sistema.Ws.Nfse/INfseService/GerarNfse"/><con:wsrmConfig version="1.2"/></con:call><con:call id="0a82f728-ee85-4e41-9111-491e820e97a0" name="Request 2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wshomologacao.simplissweb.com.br/nfseservice.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sis="http://www.sistema.com.br/Sistema.Ws.Nfse" xmlns:nfse="http://www.sistema.com.br/Nfse/arquivos/nfse_3.xsd" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" xmlns:sis1="http://www.sistema.com.br/Sistema.Ws.Nfse.Cn">
    <soapenv:Header/>
    <soapenv:Body>
       <sis:GerarNfse>
+         <!--Optional:-->
          <sis:GerarNovaNfseEnvio>
+            <!--Optional:-->
             <nfse:Prestador>
-               <nfse:Cnpj>55347520000167</nfse:Cnpj>
-               <nfse:InscricaoMunicipal>6389</nfse:InscricaoMunicipal>
+               <!--Optional:-->
+               <nfse:Cnpj>?</nfse:Cnpj>
+               <!--Optional:-->
+               <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
             </nfse:Prestador>
-            <nfse:InformacaoNfse id="123">
-               <nfse:NaturezaOperacao>3</nfse:NaturezaOperacao>
-               <nfse:RegimeEspecialTributacao>9</nfse:RegimeEspecialTributacao>
-               <nfse:OptanteSimplesNacional>2</nfse:OptanteSimplesNacional>
-               <nfse:IncentivadorCultural>2</nfse:IncentivadorCultural>
-               <nfse:Status>1</nfse:Status>
-               <nfse:Competencia>2024-02-19T13:55:46.000Z</nfse:Competencia>
-               <nfse:OutrasInformacoes>teste</nfse:OutrasInformacoes>
+            <!--Optional:-->
+            <nfse:InformacaoNfse id="?">
+               <nfse:NaturezaOperacao>?</nfse:NaturezaOperacao>
+               <!--Optional:-->
+               <nfse:RegimeEspecialTributacao>?</nfse:RegimeEspecialTributacao>
+               <nfse:OptanteSimplesNacional>?</nfse:OptanteSimplesNacional>
+               <nfse:IncentivadorCultural>?</nfse:IncentivadorCultural>
+               <nfse:Status>?</nfse:Status>
+               <nfse:Competencia>?</nfse:Competencia>
+               <!--Optional:-->
+               <nfse:NfseSubstituida>?</nfse:NfseSubstituida>
+               <!--Optional:-->
+               <nfse:OutrasInformacoes>?</nfse:OutrasInformacoes>
+               <!--Optional:-->
                <nfse:Servico>
+                  <!--Optional:-->
                   <nfse:Valores>
-                     <nfse:ValorServicos>100</nfse:ValorServicos>
-                     <nfse:ValorDeducoes>0</nfse:ValorDeducoes>
-                     <nfse:ValorPis>0</nfse:ValorPis>
-                     <nfse:ValorCofins>0</nfse:ValorCofins>
-                     <nfse:ValorInss>0</nfse:ValorInss>
-                     <nfse:ValorIr>0</nfse:ValorIr>
-                     <nfse:ValorCsll>0</nfse:ValorCsll>
-                     <nfse:IssRetido>2</nfse:IssRetido>
-                     <nfse:ValorIss>0</nfse:ValorIss>
-                     <nfse:ValorIssRetido>0</nfse:ValorIssRetido>
-                     <nfse:OutrasRetencoes>0</nfse:OutrasRetencoes>
-                     <nfse:BaseCalculo>100</nfse:BaseCalculo>
-                     <nfse:Aliquota>0</nfse:Aliquota>
-                     <nfse:ValorLiquidoNfse>100</nfse:ValorLiquidoNfse>
+                     <nfse:ValorServicos>?</nfse:ValorServicos>
+                     <!--Optional:-->
+                     <nfse:ValorDeducoes>?</nfse:ValorDeducoes>
+                     <!--Optional:-->
+                     <nfse:ValorPis>?</nfse:ValorPis>
+                     <!--Optional:-->
+                     <nfse:ValorCofins>?</nfse:ValorCofins>
+                     <!--Optional:-->
+                     <nfse:ValorInss>?</nfse:ValorInss>
+                     <!--Optional:-->
+                     <nfse:ValorIr>?</nfse:ValorIr>
+                     <!--Optional:-->
+                     <nfse:ValorCsll>?</nfse:ValorCsll>
+                     <nfse:IssRetido>?</nfse:IssRetido>
+                     <!--Optional:-->
+                     <nfse:ValorIss>?</nfse:ValorIss>
+                     <!--Optional:-->
+                     <nfse:ValorIssRetido>?</nfse:ValorIssRetido>
+                     <!--Optional:-->
+                     <nfse:OutrasRetencoes>?</nfse:OutrasRetencoes>
+                     <!--Optional:-->
+                     <nfse:BaseCalculo>?</nfse:BaseCalculo>
+                     <!--Optional:-->
+                     <nfse:Aliquota>?</nfse:Aliquota>
+                     <!--Optional:-->
+                     <nfse:ValorLiquidoNfse>?</nfse:ValorLiquidoNfse>
+                     <!--Optional:-->
+                     <nfse:DescontoIncondicionado>?</nfse:DescontoIncondicionado>
+                     <!--Optional:-->
+                     <nfse:DescontoCondicionado>?</nfse:DescontoCondicionado>
                   </nfse:Valores>
-                  <nfse:ItemListaServico>35.01</nfse:ItemListaServico>
-                  <nfse:CodigoCnae>5822101</nfse:CodigoCnae>
-                  <nfse:CodigoTributacaoMunicipio>35.01</nfse:CodigoTributacaoMunicipio>
-                  <nfse:Discriminacao>teste</nfse:Discriminacao>
-                  <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
+                  <!--Optional:-->
+                  <nfse:ItemListaServico>?</nfse:ItemListaServico>
+                  <!--Optional:-->
+                  <nfse:CodigoCnae>?</nfse:CodigoCnae>
+                  <!--Optional:-->
+                  <nfse:CodigoTributacaoMunicipio>?</nfse:CodigoTributacaoMunicipio>
+                  <!--Optional:-->
+                  <nfse:Discriminacao>?</nfse:Discriminacao>
+                  <nfse:CodigoMunicipio>?</nfse:CodigoMunicipio>
+                  <!--Zero or more repetitions:-->
                   <nfse:ItensServico>
-                     <nfse:Descricao>Teste</nfse:Descricao>
-                     <nfse:Quantidade>1</nfse:Quantidade>
-                     <nfse:ValorUnitario>100</nfse:ValorUnitario>
-                     <nfse:IssTributavel>1</nfse:IssTributavel>
+                     <!--Optional:-->
+                     <nfse:Descricao>?</nfse:Descricao>
+                     <nfse:Quantidade>?</nfse:Quantidade>
+                     <nfse:ValorUnitario>?</nfse:ValorUnitario>
+                     <!--Optional:-->
+                     <nfse:IssTributavel>?</nfse:IssTributavel>
                   </nfse:ItensServico>
                </nfse:Servico>
+               <!--Optional:-->
                <nfse:Tomador>
+                  <!--Optional:-->
                   <nfse:IdentificacaoTomador>
+                     <!--Optional:-->
                      <nfse:CpfCnpj>
-                        <nfse:Cpf>34969247803</nfse:Cpf>
+                        <!--You have a CHOICE of the next 2 items at this level-->
+                        <!--Optional:-->
+                        <nfse:Cnpj>?</nfse:Cnpj>
+                        <!--Optional:-->
+                        <nfse:Cpf>?</nfse:Cpf>
                      </nfse:CpfCnpj>
+                     <!--Optional:-->
+                     <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+                     <!--Optional:-->
+                     <nfse:InscricaoEstadual>?</nfse:InscricaoEstadual>
                   </nfse:IdentificacaoTomador>
-                  <nfse:RazaoSocial>teste</nfse:RazaoSocial>
+                  <!--Optional:-->
+                  <nfse:RazaoSocial>?</nfse:RazaoSocial>
+                  <!--Optional:-->
                   <nfse:Endereco>
-                     <nfse:Endereco>Rua Amélio Domingos Mungo</nfse:Endereco>
-                     <nfse:Numero>772</nfse:Numero>
-                     <nfse:Complemento>teste</nfse:Complemento>
-                     <nfse:Bairro>Jardim Maracanã</nfse:Bairro>
-                     <nfse:CodigoMunicipio>3541406</nfse:CodigoMunicipio>
-                     <nfse:Uf>SP</nfse:Uf>
-                     <nfse:Cep>19026</nfse:Cep>
+                     <!--Optional:-->
+                     <nfse:Endereco>?</nfse:Endereco>
+                     <!--Optional:-->
+                     <nfse:Numero>?</nfse:Numero>
+                     <!--Optional:-->
+                     <nfse:Complemento>?</nfse:Complemento>
+                     <!--Optional:-->
+                     <nfse:Bairro>?</nfse:Bairro>
+                     <!--Optional:-->
+                     <nfse:CodigoMunicipio>?</nfse:CodigoMunicipio>
+                     <!--Optional:-->
+                     <nfse:Uf>?</nfse:Uf>
+                     <!--Optional:-->
+                     <nfse:Cep>?</nfse:Cep>
                   </nfse:Endereco>
+                  <!--Optional:-->
                   <nfse:Contato>
-                     <nfse:Telefone>18981449536</nfse:Telefone>
-                     <nfse:Email>weslleybent@gmail.com</nfse:Email>
+                     <!--Optional:-->
+                     <nfse:Telefone>?</nfse:Telefone>
+                     <!--Optional:-->
+                     <nfse:Email>?</nfse:Email>
                   </nfse:Contato>
                </nfse:Tomador>
+               <!--Optional:-->
+               <nfse:IntermediarioServico>
+                  <!--Optional:-->
+                  <nfse:RazaoSocial>?</nfse:RazaoSocial>
+                  <!--Optional:-->
+                  <nfse:CpfCnpj>
+                     <!--You have a CHOICE of the next 2 items at this level-->
+                     <!--Optional:-->
+                     <nfse:Cnpj>?</nfse:Cnpj>
+                     <!--Optional:-->
+                     <nfse:Cpf>?</nfse:Cpf>
+                  </nfse:CpfCnpj>
+                  <!--Optional:-->
+                  <nfse:InscricaoMunicipal>?</nfse:InscricaoMunicipal>
+               </nfse:IntermediarioServico>
+               <!--Optional:-->
+               <nfse:ContrucaoCivil>
+                  <!--Optional:-->
+                  <nfse:CodigoObra>?</nfse:CodigoObra>
+                  <!--Optional:-->
+                  <nfse:Art>?</nfse:Art>
+               </nfse:ContrucaoCivil>
+               <!--Optional:-->
+               <nfse:MotivoCancelamento>?</nfse:MotivoCancelamento>
             </nfse:InformacaoNfse>
+            <!--Optional:-->
+            <xd:Signature Id="?">
+               <!--Optional:-->
+               <xd:SignedInfo Id="?">
+                  <!--Optional:-->
+                  <xd:CanonicalizationMethod Algorithm="?">
+                     e
+                     <!--You may enter ANY elements at this point-->
+                     gero
+                  </xd:CanonicalizationMethod>
+                  <!--Optional:-->
+                  <xd:SignatureMethod Algorithm="?">
+                     cum
+                     <!--Optional:-->
+                     <xd:HMACOutputLength>?</xd:HMACOutputLength>
+                     sonoras
+                     <!--You may enter ANY elements at this point-->
+                     aeoliam
+                  </xd:SignatureMethod>
+                  <!--Zero or more repetitions:-->
+                  <xd:Reference Id="?" URI="?" Type="?">
+                     <!--Optional:-->
+                     <xd:Transforms>
+                        <!--Zero or more repetitions:-->
+                        <xd:Transform Algorithm="?">
+                           quae
+                           <!--You have a CHOICE of the next 2 items at this level-->
+                           <!--Optional:-->
+                           <xd:XPath>?</xd:XPath>
+                           <!--You may enter ANY elements at this point-->
+                           ventos
+                        </xd:Transform>
+                     </xd:Transforms>
+                     <!--Optional:-->
+                     <xd:DigestMethod Algorithm="?">
+                        verrantque
+                        <!--You may enter ANY elements at this point-->
+                        temperat
+                     </xd:DigestMethod>
+                     <!--Optional:-->
+                     <xd:DigestValue>cid:258937527528</xd:DigestValue>
+                  </xd:Reference>
+               </xd:SignedInfo>
+               <!--Optional:-->
+               <xd:SignatureValue Id="?">cid:1577812519504</xd:SignatureValue>
+               <!--Optional:-->
+               <xd:KeyInfo Id="?">
+                  per
+                  <!--You have a CHOICE of the next 8 items at this level-->
+                  <!--Optional:-->
+                  <xd:KeyName>?</xd:KeyName>
+                  <!--Optional:-->
+                  <xd:KeyValue>
+                     turbine
+                     <!--You have a CHOICE of the next 3 items at this level-->
+                     <!--Optional:-->
+                     <xd:DSAKeyValue>
+                        <!--Optional:-->
+                        <xd:P>cid:920394812800</xd:P>
+                        <!--Optional:-->
+                        <xd:Q>cid:419770581099</xd:Q>
+                        <!--Optional:-->
+                        <xd:G>cid:1438055984592</xd:G>
+                        <!--Optional:-->
+                        <xd:Y>cid:863779407650</xd:Y>
+                        <!--Optional:-->
+                        <xd:J>cid:17785366416</xd:J>
+                        <!--Optional:-->
+                        <xd:Seed>cid:431765384539</xd:Seed>
+                        <!--Optional:-->
+                        <xd:PgenCounter>cid:790453181408</xd:PgenCounter>
+                     </xd:DSAKeyValue>
+                     <!--Optional:-->
+                     <xd:RSAKeyValue>
+                        <!--Optional:-->
+                        <xd:Modulus>cid:1684821029839</xd:Modulus>
+                        <!--Optional:-->
+                        <xd:Exponent>cid:501211338570</xd:Exponent>
+                     </xd:RSAKeyValue>
+                     <!--You may enter ANY elements at this point-->
+                     circum
+                  </xd:KeyValue>
+                  <!--Optional:-->
+                  <xd:MgmtData>?</xd:MgmtData>
+                  <!--Optional:-->
+                  <xd:PGPData>
+                     <!--You have a CHOICE of the next 3 items at this level-->
+                     <!--Optional:-->
+                     <xd:PGPKeyID>cid:65483498872</xd:PGPKeyID>
+                     <!--Optional:-->
+                     <xd:PGPKeyPacket>cid:1185509184399</xd:PGPKeyPacket>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:PGPData>
+                  <!--Optional:-->
+                  <xd:RetrievalMethod URI="?" Type="?">
+                     <!--Optional:-->
+                     <xd:Transforms>
+                        <!--Zero or more repetitions:-->
+                        <xd:Transform Algorithm="?">
+                           regemque
+                           <!--You have a CHOICE of the next 2 items at this level-->
+                           <!--Optional:-->
+                           <xd:XPath>?</xd:XPath>
+                           <!--You may enter ANY elements at this point-->
+                           nimborum
+                        </xd:Transform>
+                     </xd:Transforms>
+                  </xd:RetrievalMethod>
+                  <!--Optional:-->
+                  <xd:SPKIData>
+                     <!--Zero or more repetitions:-->
+                     <xd:SPKISexp>cid:1353854772875</xd:SPKISexp>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:SPKIData>
+                  <!--Optional:-->
+                  <xd:X509Data>
+                     <!--You have a CHOICE of the next 6 items at this level-->
+                     <!--Optional:-->
+                     <xd:X509CRL>cid:660234844965</xd:X509CRL>
+                     <!--Optional:-->
+                     <xd:X509Certificate>cid:54559824409</xd:X509Certificate>
+                     <!--Optional:-->
+                     <xd:X509IssuerSerial>
+                        <!--Optional:-->
+                        <xd:X509IssuerName>?</xd:X509IssuerName>
+                        <!--Optional:-->
+                        <xd:X509SerialNumber>?</xd:X509SerialNumber>
+                     </xd:X509IssuerSerial>
+                     <!--Optional:-->
+                     <xd:X509SKI>cid:169973395072</xd:X509SKI>
+                     <!--Optional:-->
+                     <xd:X509SubjectName>?</xd:X509SubjectName>
+                     <!--You may enter ANY elements at this point-->
+                  </xd:X509Data>
+                  <!--You may enter ANY elements at this point-->
+                  fremunt
+               </xd:KeyInfo>
+               <!--Zero or more repetitions:-->
+               <xd:Object Id="?" MimeType="?" Encoding="?">
+                  foedere
+                  <!--You may enter ANY elements at this point-->
+                  ferant
+               </xd:Object>
+            </xd:Signature>
          </sis:GerarNovaNfseEnvio>
+         <!--Optional:-->
          <sis:pParam>
-            <sis1:P1>55347520000167</sis1:P1>
-            <sis1:P2>gA1WGkNpFhT9bZH6</sis1:P2>
+            <!--Optional:-->
+            <sis1:P1>?</sis1:P1>
+            <!--Optional:-->
+            <sis1:P2>?</sis1:P2>
          </sis:pParam>
       </sis:GerarNfse>
    </soapenv:Body>

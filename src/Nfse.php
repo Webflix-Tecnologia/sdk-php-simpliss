@@ -67,8 +67,8 @@ class Nfse{
     
     public function dumpLastExecution(){
         Helper\SimplissHelper::dump([
-            'request' => $this->soapClient->getCustomLastRequest(),
-            'response' => $this->soapClient->__getLastResponse(),
+            'request' => htmlspecialchars($this->soapClient->getCustomLastRequest()),
+            'response' => htmlspecialchars($this->soapClient->__getLastResponse()),
         ]);
     }
     
