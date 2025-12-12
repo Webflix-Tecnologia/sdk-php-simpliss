@@ -61,7 +61,7 @@ class Nfse{
         return $this->soapClient->__getLastResponse();
     }
     
-    public function dumpSoa(){
+    public function dumpLastExecution(){
         Helper\SimplissHelper::dump([
             'request' => $this->soapClient->__getLastRequest(),
             'response' => $this->soapClient->__getLastResponse(),
