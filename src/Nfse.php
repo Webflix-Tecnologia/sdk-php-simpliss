@@ -57,6 +57,10 @@ class Nfse{
         return $this->soapClient->CancelarNfse($data);
     }
     
+    public function getLastResponse(){
+        return $this->soapClient->__getLastResponse();
+    }
+    
     public function dumpSoa(){
         Helper\SimplissHelper::dump([
             'request' => $this->soapClient->__getLastRequest(),
